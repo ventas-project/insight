@@ -93,6 +93,18 @@
                         <td class="text-right"><a href="block-index/{{info.blocks}}">{{info.blocks}}</a></td>
                     </tr>
                     <tr>
+                        <td translate>Max Coin</td>
+                        <td class="text-right"> {{info.maxmoney|number}} </td>
+                    </tr>
+                    <tr>
+                        <td translate>Current mined Coins</td>
+                        <td class="text-right">{{info.moneysupply|number}}</td>
+                    </tr>
+                    <tr>
+                        <td translate>Remind Coins</td>
+                        <td class="text-right">{{ (info.maxmoney - info.moneysupply)|number}}</td>
+                    </tr>
+                    <tr>
                         <td translate>Time Offset</td>
                         <td class="text-right">{{info.timeoffset}}</td>
                     </tr>
