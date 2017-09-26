@@ -9,7 +9,7 @@ angular.module('insight.status').controller('StatusController',
                     q: 'get' + q
                 },
                 function(d) {
-                    console.log("result", d);
+
                     $scope.loaded = 1;
                     angular.extend($scope, d);
                 },
